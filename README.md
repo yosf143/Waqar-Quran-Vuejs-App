@@ -49,7 +49,6 @@ Waqar is built using modern web technologies:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yosf143/Waqar-Quran-Vuejs-App.git
-   cd Waqar
    ```
 
 2. Install dependencies:
