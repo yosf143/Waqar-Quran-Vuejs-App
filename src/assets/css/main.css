@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: rgba(61, 61, 61, 0.702); 
+  --primary-light: #e8f5e9; 
+  --secondary-color: #757575; 
+  --background-color: #fffef9d1; 
+  --text-color: #212121; 
+  --border-color: #e0e0e0; 
+  --surah-bg: #ffffff; 
+  --decorative-color: #9e9e9e; 
+  --shadow-color: rgba(0, 0, 0, 0.05);
+}
+
+* {
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+  touch-action: pan-x pan-y; 
+}
+
+input, textarea {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  touch-action: manipulation;
+}
+
+html, body {
+  overscroll-behavior: none; 
+}
+
+body {
+  font-family: 'Amiri', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  direction: rtl;
+
+  touch-action: manipulation;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8a6d3b;
+  border-radius: 10px;
+  border: 2px solid var(--background-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-light) !important;
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.arabic-text {
+  font-family: 'Scheherazade New', 'Amiri', serif;
+}
+
+.arabic-title {
+  font-family: 'Scheherazade New', 'Amiri', serif;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 1000px;
+  padding: 2rem 1rem;
+}
+
+.arabic-container {
+  direction: rtl;
+  text-align: right;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--surah-bg);
+  box-shadow: 0 2px 8px var(--shadow-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.quran-container {
+  background-color: var(--surah-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  padding: 1.5rem;
+}
+
+.decorative-divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 1.5rem 0;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.loading-spinner {
+  color: #8a6d3b;
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .loading-container {
+    min-height: 100px;
+  }
+
+  .loading-spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .loading-spinner {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  input,
+  textarea {
+    font-size: 16px; 
+  }
+}

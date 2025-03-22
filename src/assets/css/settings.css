@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+.cairo-font {
+  font-family: 'Cairo', sans-serif;
+}
+.settings-dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  backdrop-filter: blur(3px);
+}
+
+.settings-dialog {
+  background-color: #f9f6e9;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  max-width: 90%;
+  width: 350px;
+  direction: rtl;
+}
+
+.settings-dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.settings-dialog-title {
+  font-weight: 600;
+  color: #8a6d3b;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.settings-dialog-close {
+  background: none;
+  border: none;
+  color: #8a6d3b;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.settings-dialog-close:hover {
+  transform: scale(1.1);
+}
+
+.settings-dialog-body {
+  margin-bottom: 1.5rem;
+}
+
+.settings-item {
+  margin-bottom: 1.25rem;
+}
+
+.settings-item:last-child {
+  margin-bottom: 0;
+}
+
+.settings-item label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.setting-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.setting-btn {
+  background-color: #f1ebd7;
+  color: #8a6d3b;
+  border: 1px solid #d5c9a8;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.setting-btn:hover:not(:disabled) {
+  background-color: #e9e2d0;
+}
+
+.setting-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.setting-value {
+  min-width: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #8a6d3b;
+}
+
+.checkbox-setting {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.checkbox-setting input {
+  margin: 0;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox-setting label {
+  margin: 0;
+  cursor: pointer;
+}
+
+.settings-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.settings-btn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.settings-btn-primary {
+  background-color: #8a6d3b;
+  color: white;
+}
+
+.settings-btn-primary:hover {
+  background-color: #7a5d2b;
+}
+
+@media (max-width: 576px) {
+  .settings-dialog {
+    padding: 1.25rem;
+    max-width: 95%;
+    width: 320px;
+  }
+
+  .settings-dialog-title {
+    font-size: 1.1rem;
+  }
+
+  .settings-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .setting-btn {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .settings-dialog {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .settings-item label {
+    font-size: 0.9rem;
+  }
+}
