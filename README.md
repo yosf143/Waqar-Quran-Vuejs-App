@@ -1,7 +1,7 @@
 # وقار (Waqar) - Quran Memorization Web Application
 
 <div align="center">
-  <img src="../yosf143/src/assets/logo.png" alt="Waqar Logo" width="200"/>
+  <img src="https://waqar.yosf143.com/assets/logo-B38abxF8.png" alt="Waqar Logo" width="200"/>
   <h3>A modern, user-friendly Quran memorization app</h3>
 </div>
 
@@ -48,7 +48,7 @@ Waqar is built using modern web technologies:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yosf143/Waqar.git
+   git clone https://github.com/yosf143/Waqar-Quran-Vuejs-App.git
    cd Waqar
    ```
 
